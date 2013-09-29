@@ -8,22 +8,22 @@ For example, your application has a feature to customize the color of some backg
 
 ![nexus_4_01](http://img594.imageshack.us/img594/7613/bv48.png?raw=true)
 
-This is a fork of android-color-picker library by brk3 (https://github.com/brk3/android-color-picker).
-Comparing to the original project this one targets API level 18 and its min supported SDK level is set to 4. 
+This is a fork of **android-color-picker** library by **brk3** (https://github.com/brk3/android-color-picker).
+Comparing to the original project this one targets **API level 18** and its **min supported API level** is set to **4**. 
 The differences also include:
 
-- AlertDialog has been replaced with DialogFragment from Android support library v4
-- DialogFragment recreates on configuration change and color is
+- **AlertDialog** has been replaced with **DialogFragment** from **Android support library v4**
+- **DialogFragment** recreates on configuration change and color is
 retrieved from saved state
-- Software layer is set programmatically on Android 3+ in AmbilWarnaKotak due to color
+- Software layer is set programmatically on **Android 3+** in **AmbilWarnaKotak** due to color
 blending issue
-- Adjusted AmbilWarna DialogFragment for bigger screens
-- On Android 3+ user can now set Theme_Holo_Dialog or
-Theme_Holo_Light_Dialog on AmbilWarna DialogFragment
+- Adjusted **AmbilWarna DialogFragment** for bigger screens
+- On **Android 3+** user can now set *Theme_Holo_Dialog* or
+*Theme_Holo_Light_Dialog* on **AmbilWarna DialogFragment**
 
-This is an Android Library Project which you can include into your main project.
+This is an **Android Library Project** which you can include into your main project.
 
-###How to use:
+###How to use
 
         // create OnAmbilWarnaListener instance
         // new color can be retrieved in onOk() event
