@@ -4,9 +4,9 @@ aka AmbilWarna library ("Pick a Color" in Indonesian)
 This is a small library for your application to enable the users to select an arbitrary color. 
 For example, your application has a feature to customize the color of some background, text, or maybe for a painting application where the user should be able to select different color for painting or filling.
 
-![nexus_4_01](http://img801.imageshack.us/img801/6816/hyn4.png) ![nexus_4_02](http://img11.imageshack.us/img11/9462/y805.png)
+![nexus_4_01](http://img801.imageshack.us/img801/6816/hyn4.png?raw=true) ![nexus_4_02](http://img11.imageshack.us/img11/9462/y805.png?raw=true)
 
-![nexus_4_01](http://img594.imageshack.us/img594/7613/bv48.png)
+![nexus_4_01](http://img594.imageshack.us/img594/7613/bv48.png?raw=true)
 
 This is a fork of android-color-picker library by brk3 (https://github.com/brk3/android-color-picker).
 Comparing to the original project this one targets API level 18 and its min supported SDK level is set to 4. 
@@ -49,4 +49,4 @@ How to use:
 
         fragment.show(ft, "color_picker_dialog");
 
-See [Wiki](android-color-picker/wiki) for more information.
+See ![Wiki](android-color-picker/wiki) for more information.
