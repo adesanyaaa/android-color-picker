@@ -1,5 +1,4 @@
-Android Color Picker
-aka AmbilWarna library ("Pick a Color" in Indonesian)
+New Android Color Picker (fork of brk3 AmbilWarna library)
 ====================
 
 This is a small library for your application to enable the users to select an arbitrary color. 
