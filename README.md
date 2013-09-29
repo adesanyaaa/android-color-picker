@@ -4,7 +4,7 @@ New Android Color Picker (fork of brk3 AmbilWarna library)
 This is a small library for your application to enable the users to select an arbitrary color. 
 For example, your application has a feature to customize the color of some background, text, or maybe for a painting application where the user should be able to select different color for painting or filling.
 
-![nexus_4_01](http://img801.imageshack.us/img801/6816/hyn4.png?raw=true) ![nexus_4_02](http://img11.imageshack.us/img11/9462/y805.png?raw=true)
+![nexus_4_01](http://img716.imageshack.us/img716/8466/5t26.png?raw=true) ![nexus_4_02](http://img17.imageshack.us/img17/150/ynrv.png?raw=true)
 
 ![nexus_4_01](http://img594.imageshack.us/img594/7613/bv48.png?raw=true)
 
@@ -23,7 +23,7 @@ Theme_Holo_Light_Dialog on AmbilWarna DialogFragment
 
 This is an Android Library Project which you can include into your main project.
 
-How to use:
+###How to use:
 
         // create OnAmbilWarnaListener instance
         // new color can be retrieved in onOk() event
@@ -49,4 +49,4 @@ How to use:
 
         fragment.show(ft, "color_picker_dialog");
 
-See ![Wiki](android-color-picker/wiki) for more information.
+###See [Wiki](https://github.com/lomza/android-color-picker/wiki) for more details.
