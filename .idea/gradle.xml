@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="GradleSettings">
-    <option name="gradleHome" value="C:\Users\Antonina\Desktop\gradle-1.8-all\gradle-1.8" />
-    <option name="linkedProjectPath" value="$USER_HOME$/Desktop/PostBankTestProject/PostBankTestProject/FinanzassistentAndroid/build.gradle" />
-    <option name="preferLocalInstallationToWrapper" value="true" />
-    <option name="useAutoImport" value="false" />
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="C:\Program Files\Android\Android Studio\gradle\gradle-2.10" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/colorpicker" />
+          </set>
+        </option>
+        <option name="myModules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/colorpicker" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
   </component>
 </project>
-

@@ -1,10 +1,14 @@
-package yuku.ambilwarna;
+package yuku.ambilwarna.colorpicker;
 
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
-import android.view.*;
+import android.view.LayoutInflater;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.ViewTreeObserver;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -12,7 +16,6 @@ import android.widget.RelativeLayout;
 public class AmbilWarnaDialogFragment extends DialogFragment implements View.OnTouchListener, View.OnClickListener {
     private int mColorOriginal;
     private int mColor;
-    private int mTheme;
 
     private OnAmbilWarnaListener mListener;
     private AmbilWarnaKotak mViewSatVal;
@@ -68,25 +71,13 @@ public class AmbilWarnaDialogFragment extends DialogFragment implements View.OnT
         if (savedInstanceState != null && savedInstanceState.containsKey(KEY_COLOR) && savedInstanceState.containsKey(KEY_THEME)) {
             mColorOriginal = savedInstanceState.getInt(KEY_COLOR_ORIGINAL);
             mColor = savedInstanceState.getInt(KEY_COLOR);
-            mTheme = savedInstanceState.getInt(KEY_THEME);
         } else {
             Bundle args = getArguments();
             mColorOriginal = args.getInt("color");
             mColor = args.getInt("color");
-            mTheme = args.getInt("theme");
         }
 
-        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.GINGERBREAD_MR1) {
-            if (mTheme != android.R.style.Theme_Holo_Dialog && mTheme != android.R.style.Theme_Holo_Light_Dialog) {
-                mTheme = android.R.style.Theme_Holo_Dialog;
-            }
-        } else {
-            if (mTheme != android.R.style.Theme_Dialog) {
-                mTheme = android.R.style.Theme_Dialog;
-            }
-        }
-
-        setStyle(DialogFragment.STYLE_NO_TITLE, mTheme);
+        setStyle(DialogFragment.STYLE_NO_TITLE, R.style.AppCompatDialogStyle);
     }
 
     @Override
@@ -104,15 +95,11 @@ public class AmbilWarnaDialogFragment extends DialogFragment implements View.OnT
     public void onSaveInstanceState(Bundle outState) {
         outState.putInt(KEY_COLOR_ORIGINAL, mColorOriginal);
         outState.putInt(KEY_COLOR, getColor());
-        outState.putInt(KEY_THEME, mTheme);
 
         super.onSaveInstanceState(outState);
     }
 
     private void initView() {
-        if (mColor == 0)
-            return;
-
         Color.colorToHSV(mColor, mСurrentColorHsv);
 
         mViewHue = mParentView.findViewById(R.id.ambilwarna_viewHue);

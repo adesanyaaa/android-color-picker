@@ -1,7 +1,13 @@
-package yuku.ambilwarna;
+package yuku.ambilwarna.colorpicker;
 
 import android.content.Context;
-import android.graphics.*;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.ComposeShader;
+import android.graphics.LinearGradient;
+import android.graphics.Paint;
+import android.graphics.PorterDuff;
+import android.graphics.Shader;
 import android.graphics.Shader.TileMode;
 import android.os.Build;
 import android.util.AttributeSet;

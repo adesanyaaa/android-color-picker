@@ -1,4 +1,4 @@
-package yuku.ambilwarna;
+package yuku.ambilwarna.colorpicker;
 
 /**
  * Interface with callback methods for AmbilWarna dialog.
