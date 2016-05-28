@@ -4,24 +4,23 @@ New Android Color Picker
 This is a small library for your application to enable the users to select an arbitrary color. 
 For example, your application has a feature to customize the color of some background, text, or maybe for a painting application where the user should be able to select different color for painting or filling.
 
-![nexus_4_01](http://img266.imageshack.us/img266/2124/ge8m.png?raw=true) ![nexus_4_02](http://img841.imageshack.us/img841/4576/g355.png?raw=true)
-
-![nexus_4_01](http://img594.imageshack.us/img594/7613/bv48.png?raw=true)
+![Nexus 5 screenshot 1](http://i1155.photobucket.com/albums/p549/Antonina_Tkachuk/color_picker_nexus_5_01_zps0eug3cox.png)
+![Nexus 5 screenshot 2](http://i1155.photobucket.com/albums/p549/Antonina_Tkachuk/color_picker_nexus_5_02_zpso6vs2y2r.png)
 
 This is a fork of **android-color-picker** library by **brk3** (https://github.com/brk3/android-color-picker).
-Comparing to the original project this one targets **API level 18** and its **min supported API level** is set to **4**. 
+Comparing to the original project this one is Gradle-based library module which targets **API level 23** and its **min supported API level** is set to **7**. It also has a support library v7 as a dependency.
+
 The differences also include:
 
-- **AlertDialog** has been replaced with **DialogFragment** from **Android support library v4**
+- **AlertDialog** has been replaced with **DialogFragment** from **Android support library v7**
 - **DialogFragment** recreates on configuration change and color is
 retrieved from saved state
 - Software layer is set programmatically on **Android 3+** in **AmbilWarnaKotak** due to color
 blending issue
 - Adjusted **AmbilWarna DialogFragment** for bigger screens
-- On **Android 3+** user can now set *Theme_Holo_Dialog* or
-*Theme_Holo_Light_Dialog* on **AmbilWarna DialogFragment**
+- By default, a compatible theme **Theme.AppCompat.Light.Dialog.Alert** is used. You can always override it for your own customization
 
-This is an **Android Library Project** which you can include into your main project.
+This is an **Android Library Module** which you can include into your application project (File > New > Import Module), and whenever used in code - Add module as a dependency.
 
 ###How to use
 
