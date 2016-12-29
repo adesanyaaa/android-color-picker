@@ -49,3 +49,9 @@ This is an **Android Library Module** which you can include into your applicatio
         fragment.show(ft, "color_picker_dialog");
 
 ###See [Wiki](https://github.com/lomza/android-color-picker/wiki) for more details.
+
+## Donate
+
+:yum:
+
+If you want to make me happy - [just drop a few...](https://www.paypal.me/toniatkachuk) ;)
